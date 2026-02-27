@@ -1,0 +1,30 @@
+#include <stdio.h>   // For printf() and scanf()
+
+int main()
+{
+    int a, b, temp;
+
+    // Taking input
+    printf("Enter value of a: ");
+    scanf("%d", &a);
+
+    printf("Enter value of b: ");
+    scanf("%d", &b);
+
+    // Display before swapping
+    printf("\nBefore Swapping:\n");
+    printf("a = %d\n", a);
+    printf("b = %d\n", b);
+
+    // Swapping using temporary variable
+    temp = a;
+    a = b;
+    b = temp;
+
+    // Display after swapping
+    printf("\nAfter Swapping:\n");
+    printf("a = %d\n", a);
+    printf("b = %d\n", b);
+
+    return 0;
+}
